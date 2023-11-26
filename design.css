@@ -1,17 +1,56 @@
-body {
+
+/* body {
     font-family: Arial, sans-serif;
-    background-color: #365df9;
     margin: 0;
     padding: 0;
+    background-image: url('/Users/rajbhushan/Downloads/img.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Ensures the background covers the entire viewport height */
+/* } */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('/Users/rajbhushan/Downloads/img.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
+
+
 .container {
-    max-width: 600px;
-    margin: 50px auto;
-    background-color:rgb(104, 237, 74);
-    padding: 20px;
-    border-radius: 8px;
+    flex-grow: 1;
+    max-width: 700px;
+    margin: 100px auto;
+    background-color:rgb(104, 237, 74, 0.7);
+    padding: 50px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(224, 241, 72, 0.1);
 }
 
 /* Add more styles as needed */
+
+footer {
+    background-color: rgba(42, 6, 6, 0.7); /* Adjust alpha value for transparency */
+    padding: 40px;
+    text-align: center;
+    color: rgb(234, 224, 224);
+}
+
+footer p {
+    margin: 0;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 8px 0;
+}
