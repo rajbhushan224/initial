@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const { Client } = require('pg');
 
 const app = express();
-const port = 3000;
+const port = 3001;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -19,10 +19,10 @@ const client = new Client({
 client.connect();
 
 app.post('/submit', (req, res) => {
-    const { name, age, ctc, department } = req.body;
+    const { name, father_name, mother_name, gender, gotra, age, village, job_type } = req.body;
 
-    const query = 'INSERT INTO users (name, age, ctc, department) VALUES ($1, $2, $3, $4)';
-    const values = [name, age, ctc, department];
+    const query = 'INSERT INTO users (name, father_name, mother_name, gender, gotra, age, village, job_type) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)';
+    const values = [name, father_name, mother_name, gender, gotra, age, village, job_type];
 
     client.query(query, values, (err, result) => {
         if (err) {
