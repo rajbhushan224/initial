@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishte-hi-rishte</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Suryavnshi Shadi</h1>
+        <h2>To register your details please fill the form below</h2>
+        <form id="userForm" action="http://3.111.36.30:3001/submit" method="post">
+            <label for="name">Candidate Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="father_name">Father's Name:</label>
+            <input type="text" id="father_name" name="father_name" required>
+            <br>
+            <label for="mother_name">Mother's Name:</label>
+            <input type="text" id="mother_name" name="mother_name" required>
+            <br>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <br>
+            <label for="gotra">Gotra :</label>
+            <input type="text" id="gotra" name="gotra" required>
+            <br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+            <br>
+            <label for="village">Village:</label>
+            <input type="text" id="village" name="village" required>
+            <br>
+            <label for="job_type">Job type:</label>
+            <select id="job_type" name="job_type">
+                <option value="govt">Government</option>
+                <option value="private">Private</option>
+                <option value="seeker">Looking for job</option>
+            </select>
+            <br>
+
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>Contact Numbers</p>
+        <ul>
+            <li>Mr Dev: +919340328126</li>
+            <li>Support: 00000000</li>
+        </ul>
+    </footer>
+    <script src="logic.js"></script>
+</body>
+</html>

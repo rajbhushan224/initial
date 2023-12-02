@@ -1,0 +1,39 @@
+.user-block {
+    box-sizing: border-box;
+    border: 1px solid #dddddd;
+    margin-bottom: 20px;
+    padding: 40px;
+    display: flex; /* Added to enable flexbox layout */
+    background-color: #e2edfd;
+}
+
+.user-image {
+    border: 1px solid #d99299;
+    border-width: 2px;
+    margin-right: 20px;
+    width: 20%;
+}
+
+table {
+    border-collapse: collapse;/*separate;*/
+    width: 50%;
+    background-color: #bad8f2;
+    border-radius: 20px;
+}
+
+tr, th, td {
+    border: 1px solid #010103;
+    text-align: left;
+    padding: 8px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgba(209, 225, 166, 0.7);
+}
+
+body {
+    background-color:rgba(166, 181, 225, 0.7);
+}
