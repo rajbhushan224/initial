@@ -1,1 +1,1 @@
-aws_access_key = 'AKIAJHBFBSBFYFNBD'
+aws_access_key = ''
