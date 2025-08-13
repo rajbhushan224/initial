@@ -1,3 +1,3 @@
-aws_access_key = 'AKIAJNFUBSBDFHSDBFS'
+aws_access_key = 'AKIAJNFUBSBDFHSjDBFS'
 
 'AKIAHBFUBE498JHB'
